@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.example.zoomsrollview.ZoomScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:maxZoom="150dp"
+        app:zoomId="@+id/zv" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:minHeight="1500dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/zv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chenbolin" />
+        </LinearLayout>
+    </com.example.zoomsrollview.ZoomScrollView>
+
+</RelativeLayout>
